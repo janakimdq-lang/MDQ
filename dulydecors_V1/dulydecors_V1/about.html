@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about DulyDecors — our story, mission, expert team, and the values that make us the trusted choice for luxury villa construction." />
+    <title>About Us | DulyDecors</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { gold: '#C9A84C', 'gold-d': '#9B7D2E', beige: '#F4EFE6', site: '#1A1A2E' },
+                fontFamily: { heading: ['"Playfair Display"', 'serif'], body: ['Poppins', 'sans-serif'] } } }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body">
+
+<!-- Loader -->
+<div id="page-loader" class="page-loader">
+    <div class="loader-brand">Duly<span>Decors</span></div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar">
+    <div class="container mx-auto px-6 flex items-center justify-between">
+        <a href="index.html" class="nav-logo">Duly<span>Decors</span></a>
+        <div class="nav-links hidden md:flex items-center gap-8">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="nav-cta ml-2">Get a Quote</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none"><i class="fas fa-bars text-xl"></i></button>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu">
+    <button id="menu-close" class="mobile-menu-close"><i class="fas fa-times"></i></button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-primary mt-4">Get a Quote</a>
+</div>
+
+<!-- Page Hero -->
+<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80'); background-size:cover; background-position:center top;">
+    <div class="page-hero-pattern"></div>
+    <div class="absolute inset-0" style="background:rgba(26,26,46,0.78)"></div>
+    <div class="container mx-auto px-6 page-hero-content">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>About Us</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-heading font-bold text-white mb-3">About DulyDecors</h1>
+        <p class="text-white/65 text-base max-w-lg leading-relaxed">
+            Our story, our values, and the passionate team behind every dream home we build.
+        </p>
+    </div>
+</section>
+
+<!-- Company Story -->
+<section class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <div class="about-img-wrap" data-aos="fade-right">
+                <img
+                    src="images/projects/mahahomes.jpeg"
+                    alt="DulyDecors headquarters"
+                    class="rounded-2xl shadow-2xl"
+                    loading="lazy"
+                />
+                <div class="about-experience-badge">
+                    <span class="about-exp-num">30+</span>
+                    <div class="about-exp-lbl">Years of<br>Excellence</div>
+                </div>
+            </div>
+
+            <div data-aos="fade-left">
+                <div class="section-tag">Our Story</div>
+                <h2 class="section-title">Built on Trust, <em>Driven by Passion</em></h2>
+                <div class="divider-gold mb-6"></div>
+                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                    DulyDecors was founded in 2012 by Arvind Kumar, a civil engineer with a vision to
+                    bring international-quality villa construction to the Indian homeowner. What began
+                    as a small construction firm in Hyderabad has grown into a pan-India brand trusted by
+                    over 250 families.
+                </p>
+                <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                    Our journey has been one of relentless improvement. From adopting cutting-edge construction
+                    technology to hand-picking the finest craftsmen, every decision we make is guided by one
+                    question: <em>"What would make our client prouder of this home?"</em>
+                </p>
+                <p class="text-gray-500 text-sm leading-relaxed mb-8">
+                    Today, DulyDecors offers the complete spectrum of home-building services — from
+                    architectural design and structural construction to luxury interiors and full turnkey
+                    solutions — all under one trusted roof.
+                </p>
+                <div class="flex gap-4 flex-wrap">
+                    <a href="projects.html" class="btn-primary"><i class="fas fa-layer-group"></i> Our Projects</a>
+                    <a href="contact.html" class="btn-outline-gold"><i class="fas fa-paper-plane"></i> Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="stats-section">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4">
+            <div class="stat-item" data-aos="fade-up">
+                <span class="stat-num" data-count="250" data-suffix="+">0+</span>
+                <span class="stat-lbl">Villas Built</span>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <span class="stat-num" data-count="30" data-suffix="+">0+</span>
+                <span class="stat-lbl">Years Experience</span>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <span class="stat-num" data-count="45" data-suffix="+">0+</span>
+                <span class="stat-lbl">Expert Members</span>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <span class="stat-num" data-count="15" data-suffix="+">0+</span>
+                <span class="stat-lbl">Cities Served</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="py-24 bg-beige">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-14" data-aos="fade-up">
+            <div class="section-tag" style="justify-content:center">Our Direction</div>
+            <h2 class="section-title">Vision & Mission</h2>
+            <div class="divider-gold mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-2xl p-10 shadow-sm border border-black/5" data-aos="fade-right">
+                <div class="w-16 h-16 rounded-2xl bg-beige flex items-center justify-center text-gold text-2xl mb-6">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3 class="font-heading font-bold text-2xl text-site mb-4">Our Vision</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    To be India's most trusted and admired villa construction company — one that every
+                    homeowner thinks of first when they dream of building their perfect home. We envision
+                    a future where quality construction is accessible, transparent, and exceptional
+                    across every city we serve.
+                </p>
+            </div>
+            <div class="bg-site rounded-2xl p-10 shadow-sm" data-aos="fade-left">
+                <div class="w-16 h-16 rounded-2xl bg-gold/20 flex items-center justify-center text-gold text-2xl mb-6">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3 class="font-heading font-bold text-2xl text-white mb-4">Our Mission</h3>
+                <p class="text-white/65 text-sm leading-relaxed">
+                    To deliver world-class construction and interior design services with complete
+                    transparency, on-time delivery, and uncompromising quality — while building lasting
+                    relationships with every client, contractor, and community we serve. Our mission is
+                    to turn every client's vision into a home they'll cherish forever.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Values -->
+<section class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-14" data-aos="fade-up">
+            <div class="section-tag" style="justify-content:center">What Guides Us</div>
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="divider-gold mx-auto"></div>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="value-card" data-aos="fade-up">
+                <div class="value-icon"><i class="fas fa-gem"></i></div>
+                <h4 class="font-heading font-bold text-lg mb-2">Quality First</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">We never compromise on materials, methods, or craftsmanship. Quality isn't a checkbox — it's our identity.</p>
+            </div>
+            <div class="value-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                <h4 class="font-heading font-bold text-lg mb-2">Integrity</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Complete transparency in pricing, timelines, and communication. We say what we mean and deliver what we promise.</p>
+            </div>
+            <div class="value-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                <h4 class="font-heading font-bold text-lg mb-2">Innovation</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">We continually adopt the latest construction technologies and design trends to deliver homes that are ahead of their time.</p>
+            </div>
+            <div class="value-card" data-aos="fade-up">
+                <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                <h4 class="font-heading font-bold text-lg mb-2">Sustainability</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Eco-friendly building practices, sustainable materials, and energy-efficient designs are central to how we build.</p>
+            </div>
+            <div class="value-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="value-icon"><i class="fas fa-users"></i></div>
+                <h4 class="font-heading font-bold text-lg mb-2">People-Centric</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">Our clients, our team, and the communities we operate in are at the heart of every business decision we make.</p>
+            </div>
+            <div class="value-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="value-icon"><i class="fas fa-trophy"></i></div>
+                <h4 class="font-heading font-bold text-lg mb-2">Excellence</h4>
+                <p class="text-gray-500 text-sm leading-relaxed">We don't settle for good enough. Every project we undertake is an opportunity to create something truly remarkable.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team
+<section class="py-24 bg-beige">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-14" data-aos="fade-up">
+            <div class="section-tag" style="justify-content:center">The People Behind It</div>
+            <h2 class="section-title">Meet Our Expert Team</h2>
+            <div class="divider-gold mx-auto mb-4"></div>
+            <p class="section-subtitle mx-auto">
+                A passionate group of architects, engineers, and designers dedicated to building extraordinary homes.
+            </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="team-card" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=400&q=80" alt="Arvind Kumar" class="team-img" loading="lazy" />
+                <div class="team-body">
+                    <h4 class="team-name">Arvind Kumar</h4>
+                    <div class="team-role">Founder & CEO</div>
+                    <p class="team-desc">Civil engineer with 20+ years of experience. Visionary leader who started DulyDecors from a single project in 2012.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card" data-aos="fade-up" data-aos-delay="80">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&h=400&q=80" alt="Meera Pillai" class="team-img" loading="lazy" />
+                <div class="team-body">
+                    <h4 class="team-name">Meera Pillai</h4>
+                    <div class="team-role">Head of Interior Design</div>
+                    <p class="team-desc">Award-winning interior designer with a flair for blending contemporary elegance with personal storytelling in every space.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card" data-aos="fade-up" data-aos-delay="160">
+                <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=400&h=400&q=80" alt="Rahul Sharma" class="team-img" loading="lazy" />
+                <div class="team-body">
+                    <h4 class="team-name">Rahul Sharma</h4>
+                    <div class="team-role">Chief Architect</div>
+                    <p class="team-desc">Structural genius and certified architect. Rahul ensures every villa we design is as strong as it is stunning.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card" data-aos="fade-up" data-aos-delay="240">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&h=400&q=80" alt="Ananya Reddy" class="team-img" loading="lazy" />
+                <div class="team-body">
+                    <h4 class="team-name">Ananya Reddy</h4>
+                    <div class="team-role">Project Manager</div>
+                    <p class="team-desc">The engine of our execution. Ananya ensures every project runs like clockwork — on time, on budget, and to spec.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Construction Philosophy / Timeline -->
+<section class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+            <div data-aos="fade-right">
+                <div class="section-tag">Our Journey</div>
+                <h2 class="section-title">A Decade of <em>Building Dreams</em></h2>
+                <div class="divider-gold mb-8"></div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">1987</span>
+                        <h4 class="timeline-title">Founded in Chennai</h4>
+                        <p class="timeline-desc">Started with a 1-member and our first residential project in Maduravoyal. The foundation of a legacy.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2000</span>
+                        <h4 class="timeline-title">Launched Interior Design Division</h4>
+                        <p class="timeline-desc">Expanded into luxury interior design, offering clients a seamless construction-to-interior experience.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2021</span>
+                        <h4 class="timeline-title">Crossed 500+ Interiors Projects</h4>
+                        <p class="timeline-desc">A major milestone. Our team grew to 30+ professionals and we expanded operations to Chennai and Bengaluru.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2021</span>
+                        <h4 class="timeline-title">Introduced Villa Projects</h4>
+                        <p class="timeline-desc">Launched our popular end-to-end turnkey offering, taking clients from raw land to a furnished, move-in-ready home.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-year">2024</span>
+                        <h4 class="timeline-title">Pan-India Operations</h4>
+                        <p class="timeline-desc">Now serving 15+ cities across India with 45+ team members and 250+ completed projects, and counting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-left">
+                <div class="section-tag">Our Philosophy</div>
+                <h2 class="section-title">The DulyDecors <em>Way</em></h2>
+                <div class="divider-gold mb-8"></div>
+
+                <div class="space-y-6">
+                    <div class="bg-beige rounded-xl p-6">
+                        <h4 class="font-heading font-bold text-lg mb-2 flex items-center gap-3">
+                            <i class="fas fa-drafting-compass text-gold"></i> Design-Led Thinking
+                        </h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Every project begins with deep listening. We understand your life, your family, and your aspirations before a single line is drawn.</p>
+                    </div>
+                    <div class="bg-beige rounded-xl p-6">
+                        <h4 class="font-heading font-bold text-lg mb-2 flex items-center gap-3">
+                            <i class="fas fa-tools text-gold"></i> Engineering Precision
+                        </h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Our structural engineering team applies rigorous quality checks at every construction stage — from soil testing to the final roof slab.</p>
+                    </div>
+                    <div class="bg-beige rounded-xl p-6">
+                        <h4 class="font-heading font-bold text-lg mb-2 flex items-center gap-3">
+                            <i class="fas fa-handshake text-gold"></i> Client Partnership
+                        </h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">You are never out of the loop. Weekly progress reports, dedicated site managers, and 24/7 client support — because it's your home.</p>
+                    </div>
+                    <div class="bg-beige rounded-xl p-6">
+                        <h4 class="font-heading font-bold text-lg mb-2 flex items-center gap-3">
+                            <i class="fas fa-award text-gold"></i> Finishing Excellence
+                        </h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">The final 10% is where most builders cut corners. We do the opposite — the finishing details are where our pride shines brightest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section py-20">
+    <div class="container mx-auto px-6 text-center relative z-10">
+        <div data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+                Ready to Build with Us?
+            </h2>
+            <p class="text-white/65 max-w-lg mx-auto mb-8">
+                Join over 250 families who trusted DulyDecors to build the home of their dreams. Your story starts with a conversation.
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="contact.html" class="btn-primary px-10 py-4"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+                <a href="projects.html" class="btn-outline px-10 py-4"><i class="fas fa-layer-group"></i> See Our Work</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="pt-16 pb-8">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+            <div>
+                <a href="index.html" class="footer-logo">Duly<span>Decors</span></a>
+                <p class="footer-desc mt-4 mb-6">Building dreams with precision, passion, and an unwavering commitment to quality since 2012.</p>
+                <div class="flex gap-3">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-heading">Quick Links</div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-heading">Services</div>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Villa Construction</a></li>
+                    <li><a href="contact.html">Interior Design</a></li>
+                    <li><a href="contact.html">Turnkey Projects</a></li>
+                    <li><a href="contact.html">Renovation Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-heading">Contact</div>
+                <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+919841664091" class="hover:text-gold">+91 98416 64091</a></div>
+                <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:dulydecors@gmail.com" class="hover:text-gold">dulydecors@gmail.com</a></div>
+                <div class="footer-contact-item"><i class="fas fa-map-marker-alt mt-1"></i><span>6B, Vel Nagar, Madhuravoyal, Chennai  – Tamil Nadu  600 107</span></div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-white/40 text-sm">&copy; 2026 DulyDecors. All rights reserved.</p>
+            <p class="text-white/40 text-sm">Designed with <span class="text-gold">♥</span> for MDQuality Apps Solutions</p>
+        </div>
+    </div>
+</footer>
+
+<a href="tel:+919841664091" class="call-float" aria-label="Call us"><i class="fas fa-phone"></i></a>
+<a href="https://wa.me/919841664091?text=Hi%2C%20I'm%20interested%20in%20villa%20construction%20services." class="whatsapp-float" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+<button id="scroll-top" class="fixed bottom-28 right-7 w-11 h-11 bg-site text-white rounded-full flex items-center justify-center shadow-lg transition-all opacity-0 pointer-events-none hover:bg-gold z-50"><i class="fas fa-chevron-up text-sm"></i></button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
